@@ -7,12 +7,12 @@ exports.getAllMatriculas = async (req, res) => {
       include: [
         { 
           model: Estudiante, 
-          as: 'estudiante',  // Usa el mismo alias que definiste
+          as: 'estudiante', 
           attributes: ['id', 'nombre', 'email'] 
         },
         { 
           model: Curso, 
-          as: 'curso',  // Usa el mismo alias que definiste
+          as: 'curso', 
           attributes: ['id', 'nombre', 'duracion_horas'] 
         },
       ],
